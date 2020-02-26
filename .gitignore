@@ -1,0 +1,4 @@
+__pychache__/
+venv/
+*.sqlite3
+.idea
