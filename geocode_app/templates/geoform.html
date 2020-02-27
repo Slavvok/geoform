@@ -1,0 +1,21 @@
+{% extends "index.html" %}
+{% block content %}
+<div class="container mt-2">
+      <div class="row">
+      <form id="form" method="POST" class="col">{% csrf_token %}
+          <label class="font-weight-bold">Координаты для адреса</label>
+          <div class="form-group">
+              <div class="input-group">
+                  <input id="address" class="form-control" placeholder="Адрес" aria-describedby="button-addon">
+                  <div class="input-group-append">
+                      <button type="submit" class="btn btn-primary" id="button-addon">Получить</button>
+                  </div>
+              </div>
+          </div>
+          <div class="form-group">
+              <textarea id="response" class="form-control" placeholder="Координаты" rows="3"></textarea>
+          </div>
+      </form>
+  </div>
+</div>
+{% endblock content %}

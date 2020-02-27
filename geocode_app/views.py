@@ -9,8 +9,8 @@ from django.conf import settings
 client = Client(settings.YANDEX_API_KEY)
 
 
-class MainView(TemplateView):
-    template_name = 'index.html'
+class GeoFormView(TemplateView):
+    template_name = 'geoform.html'
 
 
 @method_decorator(csrf_exempt, name='dispatch')
